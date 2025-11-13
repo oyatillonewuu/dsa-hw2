@@ -91,8 +91,9 @@ int main(void) {
     std::cout << pq.size() << std::endl;
 
     std::cout << pq.extract_max() << std::endl;
-    std::cout << pq.extract_max() << std::endl;
+    std::cout << pq.get_max() << std::endl;
 
+    std::cout << pq.extract_max() << std::endl;
     std::cout << pq.extract_max() << std::endl;
 
     /*
