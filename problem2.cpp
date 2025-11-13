@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#include "../heap_oop/min_heap/heap.h"
-#include "../utils/utils.h"
+#include "heap_oop/min_heap/heap.h"
+#include "utils/utils.h"
 
 void heapSort(std::vector<int>& dest, const std::vector<int>& src) {
     Heap hp = Heap(src.size());
@@ -14,7 +14,6 @@ void heapSort(std::vector<int>& dest, const std::vector<int>& src) {
 
 int main(void) {
     int size;
-    std::cout << "Enter size: ";
     std::cin >> size;
 
     std::vector<int> src;
@@ -23,7 +22,6 @@ int main(void) {
     std::vector<int> sortedVec;
     heapSort(sortedVec, src);
 
-    std::cout << "Sorted vector: ";
     printVec(sortedVec);
     
     return 0;

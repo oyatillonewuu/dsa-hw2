@@ -1,30 +1,22 @@
 #include <iostream>
 #include <stdexcept>
-#include "../pqueue/pqueue.h"
+#include "pqueue/pqueue.h"
 using namespace std;
 
 int main(void) {
     int cap;
-    cout << "Enter capacity of the priority queue: ";
     cin >> cap;
     MaxPQueue pq(cap);
     pq.insert(5);
     pq.insert(2);
-    std::cout << "Inserted 5->2. Max: " << pq.get_max() << std::endl;
+    std::cout << pq.get_max() << std::endl;
 
     pq.insert(7);
-    std::cout << "Inserted 7. Size: ";
     std::cout << pq.size() << std::endl;
 
-    std::cout << "Extracting max: ";
+    std::cout << pq.extract_max() << std::endl;
     std::cout << pq.extract_max() << std::endl;
 
-    std::cout << pq.size() << std::endl;
-
-    std::cout << "Extracting max: ";
-    std::cout << pq.extract_max() << std::endl;
-
-    std::cout << "Extracting max: ";
     std::cout << pq.extract_max() << std::endl;
 
     /*
@@ -42,11 +34,10 @@ int main(void) {
      *     Otherwise, a flowed code/bugs can go silent.
      * */
 
-    std::cout << "Max: ";
     try {
         std::cout << pq.get_max() << std::endl;
     } catch (std::runtime_error e) {
-        std::cout << e.what() << std::endl;
+        std::cout << "EMPTY" << std::endl;
     }
     return 0;
 }
