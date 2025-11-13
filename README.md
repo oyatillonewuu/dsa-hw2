@@ -2,6 +2,15 @@
 
 Source: [github.com/oyatillonewuu/dsa-hw2](https://github.com/oyatillonewuu/dsa-hw2) 
 
+Note: I guarantee that no part in this project was written by AI and that this is purely human work.
+
+Credits: Learned the implementation algorithms/ideas from:
+
+- facebook/folly
+- https://github.com/TheAlgorithms/Python
+- programiz
+- and others.
+
 Implemented:
 
 - Min heap
